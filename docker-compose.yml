@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+  openssl:
+    build: .
+    container_name: openssl_container
+    command: sh -c "./encrypt.sh && ./decrypt.sh"
